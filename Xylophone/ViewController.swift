@@ -65,8 +65,22 @@ class ViewController: UIViewController {
         playSound(s: "E")
     }
     
+    @IBAction func fPressed(_ sender: UIButton) {
+         playSound(s: "F")
+    }
+    
+    @IBAction func gPressed(_ sender: UIButton) {
+         playSound(s: "G")
+    }
+    
+    @IBAction func aPressed(_ sender: UIButton) {
+         playSound(s: "A")
+    }
     
     
+    @IBAction func bPressed(_ sender: UIButton) {
+         playSound(s: "B")
+    }
     
     func playSound(s:String) {
         let url = Bundle.main.url(forResource: s, withExtension: "wav")
