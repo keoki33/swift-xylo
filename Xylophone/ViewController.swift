@@ -62,7 +62,9 @@ class ViewController: UIViewController {
     @IBAction func keyPressed(_ sender: UIButton) {
         print(sender.titleLabel?.text as Any)
         playSound(s: sender.titleLabel?.text ?? "")
-    }
+        print(sender.tintColor as Any)
+        sender.showsTouchWhenHighlighted = true
+            }
     
 
     
