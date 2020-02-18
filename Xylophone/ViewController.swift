@@ -64,7 +64,14 @@ class ViewController: UIViewController {
         playSound(soundName: sender.titleLabel?.text ?? "")
         print(sender.tintColor as Any)
         sender.showsTouchWhenHighlighted = true
+        sender.alpha = 0.5
+        print("start")
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+            sender.alpha = 1
+            print("end")
+        }
             }
+
     
     
     func playSound(soundName:String) {
